@@ -9,26 +9,43 @@ The goal of this repo is to build a minimal desktop app and to get to know Elect
   - Node.js v12.19.0
   - NPM 6.14.8
 
-## Resources
-- [Electron Documentation - Quick Start Guide](https://www.electronjs.org/docs/tutorial/quick-start)
-- [Create an Electron application with Vue and Vuetify](https://itnext.io/electron-application-with-vue-js-and-vuetify-f2a1f9c749b8)
+### Available Commands:
 
+`npm run serve`
+
+Run Vue app on localhost:8080.
+
+`npm run electron:serve`
+
+Run Electron app.
+
+`npm run electron:build`
+
+Build Electron app.
 
 ## Steps to Re-Create the Sample App
 1. npm install -g @vue/cli
+
 2. vue create [app-name] (e.g. vue create electron-vue-sample-app)
-- Please pick a preset: Manually select features
-- Check the features needed for your project: Choose Vue version, Babel, TS, Router, Vuex, C
-SS Pre-processors, Linter
-- Choose a version of Vue.js that you want to start the project with 3.x (Preview)
-- Use class-style component syntax? Yes
-- Use Babel alongside TypeScript (required for modern mode, auto-detected polyfills, transpi
-ling JSX)? Yes
-- Use history mode for router? (Requires proper server setup for index fallback in productio
-n) No
-- Pick a CSS pre-processor (PostCSS, Autoprefixer and CSS Modules are supported by default):
- Sass/SCSS (with node-sass)
-- Pick a linter / formatter config: Prettier
-- Pick additional lint features: Lint on save
-- Where do you prefer placing config for Babel, ESLint, etc.? In dedicated config files
+    - Please pick a preset: Manually select features
+    - Check the features needed for your project: Choose Vue version, Babel, TS, Router, Vuex, C
+    SS Pre-processors, Linter
+    - Choose a version of Vue.js that you want to start the project with 3.x (Preview)
+    - Use class-style component syntax? Yes
+    - Use Babel alongside TypeScript (required for modern mode, auto-detected polyfills, transpi
+    ling JSX)? Yes
+    - Use history mode for router? (Requires proper server setup for index fallback in productio
+    n) No
+    - Pick a CSS pre-processor (PostCSS, Autoprefixer and CSS Modules are supported by default):
+     Sass/SCSS (with node-sass)
+    - Pick a linter / formatter config: Prettier
+    - Pick additional lint features: Lint on save
+    - Where do you prefer placing config for Babel, ESLint, etc.? In dedicated config files
+
 3. vue add electron-builder
+    - Choose Electron Version ^9.0.0
+
+## Resources
+- [Electron Documentation - Quick Start Guide](https://www.electronjs.org/docs/tutorial/quick-start)
+- [Create an Electron application with Vue and Vuetify](https://itnext.io/electron-application-with-vue-js-and-vuetify-f2a1f9c749b8)
+- [Vue CLI Documentation - Creating a Project](https://cli.vuejs.org/guide/creating-a-project.html#vue-create)
