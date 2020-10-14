@@ -1,0 +1,24 @@
+{
+  "name": "electron-vue-sample-app",
+  "version": "0.1.0",
+  "description": "A sample desktop app using [Electron](https://www.electronjs.org/) and  [Vue](https://vuejs.org/), build in 2020.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmunozba/electron-vue-sample-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmunozba/electron-vue-sample-app/issues"
+  },
+  "homepage": "https://github.com/mmunozba/electron-vue-sample-app#readme",
+  "devDependencies": {
+    "electron": "^10.1.3"
+  }
+}
