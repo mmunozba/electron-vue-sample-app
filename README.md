@@ -9,7 +9,7 @@ The goal of this repo is to build a minimal desktop app and to get to know Elect
   - Node.js v12.19.0
   - NPM 6.14.8
 
-## Available Commands:
+### Available Commands:
 
 `npm run serve`
 
