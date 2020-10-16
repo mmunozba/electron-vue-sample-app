@@ -1,6 +1,6 @@
 {
   "name": "electron-vue-sample-app",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "A sample desktop app using [Electron](https://www.electronjs.org/) and  [Vue](https://vuejs.org/), build in 2020.",
   "private": true,
   "scripts": {
