@@ -3,13 +3,13 @@ A sample desktop app using [Electron](https://www.electronjs.org/) and  [Vue](ht
 
 The goal of this repo is to build a minimal desktop app and to get to know Electron for building JS desktop apps with Vue as a frontend framework.
 
-## Prerequisites
+### Prerequisites
 
 - Install [Node.js](https://nodejs.org/en/download/). Versions used when creating this app:
   - Node.js v12.19.0
   - NPM 6.14.8
 
-### Available Commands:
+## Available Commands:
 
 `npm run serve`
 
@@ -23,10 +23,16 @@ Run Electron app.
 
 Build Electron app.
 
-## Steps to Re-Create the Sample App
+## Additional Resources
+
+- [Electron Documentation - Quick Start Guide](https://www.electronjs.org/docs/tutorial/quick-start)
+- [Create an Electron application with Vue and Vuetify](https://itnext.io/electron-application-with-vue-js-and-vuetify-f2a1f9c749b8)
+- [Vue CLI Documentation - Creating a Project](https://cli.vuejs.org/guide/creating-a-project.html#vue-create)
+
+### Steps to Re-Create the Sample App
 1. npm install -g @vue/cli
 
-2. vue create [app-name] (e.g. vue create electron-vue-sample-app)
+2. vue create electron-vue-sample-app
     - Please pick a preset: Manually select features
     - Check the features needed for your project: Choose Vue version, Babel, TS, Router, Vuex, C
     SS Pre-processors, Linter
@@ -44,8 +50,3 @@ Build Electron app.
 
 3. vue add electron-builder
     - Choose Electron Version ^9.0.0
-
-## Resources
-- [Electron Documentation - Quick Start Guide](https://www.electronjs.org/docs/tutorial/quick-start)
-- [Create an Electron application with Vue and Vuetify](https://itnext.io/electron-application-with-vue-js-and-vuetify-f2a1f9c749b8)
-- [Vue CLI Documentation - Creating a Project](https://cli.vuejs.org/guide/creating-a-project.html#vue-create)
