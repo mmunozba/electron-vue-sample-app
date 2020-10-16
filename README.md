@@ -28,6 +28,8 @@ Build Electron app.
 - [Electron Documentation - Quick Start Guide](https://www.electronjs.org/docs/tutorial/quick-start)
 - [Create an Electron application with Vue and Vuetify](https://itnext.io/electron-application-with-vue-js-and-vuetify-f2a1f9c749b8)
 - [Vue CLI Documentation - Creating a Project](https://cli.vuejs.org/guide/creating-a-project.html#vue-create)
+- [Electron-Builder Documentation - Node Integration](https://nklayman.github.io/vue-cli-plugin-electron-builder/guide/security.html#node-integration)
+- [Vuetify Documentation - Getting Started - Installation](https://vuetifyjs.com/en/getting-started/installation/)
 
 ### Steps to Re-Create the Sample App
 1. `npm install -g @vue/cli`
