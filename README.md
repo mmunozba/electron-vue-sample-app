@@ -28,15 +28,17 @@ Build Electron app.
 - [Electron Documentation - Quick Start Guide](https://www.electronjs.org/docs/tutorial/quick-start)
 - [Create an Electron application with Vue and Vuetify](https://itnext.io/electron-application-with-vue-js-and-vuetify-f2a1f9c749b8)
 - [Vue CLI Documentation - Creating a Project](https://cli.vuejs.org/guide/creating-a-project.html#vue-create)
+- [Electron-Builder Documentation - Node Integration](https://nklayman.github.io/vue-cli-plugin-electron-builder/guide/security.html#node-integration)
+- [Vuetify Documentation - Getting Started - Installation](https://vuetifyjs.com/en/getting-started/installation/)
 
 ### Steps to Re-Create the Sample App
-1. npm install -g @vue/cli
+1. `npm install -g @vue/cli`
 
-2. vue create electron-vue-sample-app
+2. `vue create electron-vue-sample-app`
     - Please pick a preset: Manually select features
     - Check the features needed for your project: Choose Vue version, Babel, TS, Router, Vuex, C
     SS Pre-processors, Linter
-    - Choose a version of Vue.js that you want to start the project with 3.x (Preview)
+    - Choose a version of Vue.js that you want to start the project with: 2.0 (Vuetify does not support Vue 3 at the time of writing. If you don't want to use Vuetify then choose 3.0)
     - Use class-style component syntax? Yes
     - Use Babel alongside TypeScript (required for modern mode, auto-detected polyfills, transpi
     ling JSX)? Yes
@@ -48,5 +50,7 @@ Build Electron app.
     - Pick additional lint features: Lint on save
     - Where do you prefer placing config for Babel, ESLint, etc.? In dedicated config files
 
-3. vue add electron-builder
+3. `vue add electron-builder`
     - Choose Electron Version ^9.0.0
+
+4. `vue add vuetify`

@@ -1,8 +1,9 @@
 "use strict";
 
-import { app, protocol, BrowserWindow } from "electron";
+import { app, protocol, BrowserWindow, ipcMain, remote} from "electron";
 import { createProtocol } from "vue-cli-plugin-electron-builder/lib";
 import installExtension, { VUEJS_DEVTOOLS } from "electron-devtools-installer";
+import path from "path";
 const isDevelopment = process.env.NODE_ENV !== "production";
 
 // Keep a global reference of the window object, if you don't, the window will
@@ -17,15 +18,16 @@ protocol.registerSchemesAsPrivileged([
 function createWindow() {
   // Create the browser window.
   win = new BrowserWindow({
-    width: 1024,
-    height: 1024,
+    width: 1600,
+    height: 1200,
+    frame: false,
     webPreferences: {
       // Use pluginOptions.nodeIntegration, leave this alone
       // See nklayman.github.io/vue-cli-plugin-electron-builder/guide/security.html#node-integration for more info
       nodeIntegration: (process.env
-        .ELECTRON_NODE_INTEGRATION as unknown) as boolean
-    },
-    title: "Electron Vue Sample App"
+        .ELECTRON_NODE_INTEGRATION as unknown) as boolean,
+      preload: path.join(__dirname, 'preload.js')
+    }
   });
 
   if (process.env.WEBPACK_DEV_SERVER_URL) {
@@ -59,6 +61,30 @@ app.on("activate", () => {
     createWindow();
   }
 });
+
+ipcMain.on('window-handler', (event, arg) => {
+  switch(arg) {
+    case "close-window":
+      app.quit();
+      event.reply('window-handler-reply', 'success-close-window')
+      break;
+    case "minimize-window":
+      win.minimize();
+      event.reply('window-handler-reply', 'success-minimize-window')
+      break;
+    case "maximize-window":
+      if (!win.isMaximized()) {
+        win.maximize();
+      } else {
+        win.unmaximize();
+      }
+      event.reply('window-handler-reply', 'success-maximize-window')
+      break;
+    default:
+      event.reply('window-handler-reply', 'error-unrecognized-argument')
+      break;
+  }
+})
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
