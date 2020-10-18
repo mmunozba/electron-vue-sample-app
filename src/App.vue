@@ -44,11 +44,11 @@
 
       <v-spacer></v-spacer>
       <div class="menuButtonContainer">
-        <v-icon @click="minimizeWindow()">mdi-square</v-icon>
+        <v-icon @click="minimizeWindow()">mdi-window-minimize</v-icon>
 
-        <v-icon @click="maximizeWindow()">mdi-circle</v-icon>
+        <v-icon @click="maximizeWindow()">mdi-window-maximize</v-icon>
 
-        <v-icon @click="closeWindow()">mdi-triangle</v-icon>
+        <v-icon @click="closeWindow()">mdi-window-close</v-icon>
       </div>
     </v-system-bar>
 
