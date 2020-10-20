@@ -69,14 +69,11 @@ window.ipcRenderer.on('window-handler-reply', (event, arg) => {
 export default Vue.extend({
   name: "App",
 
-  // components: {
-  //   HelloWorld
-  // },
-
   data: () => ({
     drawer: null,
     routes: [
       { title: "Home", icon: "mdi-view-dashboard", path: "/" },
+      { title: "Todo", icon: "mdi-checkbox-marked-outline", path: "/todo" },
       { title: "About", icon: "mdi-help-box", path: "/about" }
     ]
   }),
